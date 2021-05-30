@@ -49,6 +49,7 @@ public class CharacterController2D : MonoBehaviour
 
     public Image Health;
     public Text gemsCount;
+    public GameObject gameOver;
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
@@ -56,7 +57,6 @@ public class CharacterController2D : MonoBehaviour
 
     private void Awake()
     {
-
         Health.transform.localScale = new Vector3(life / dataConserved.DATA.maxLife, 1, 1);
         Health.transform.localPosition = new Vector3(pixelsToMove * (1 - (life / dataConserved.DATA.maxLife)), 0, 0);
 
@@ -73,6 +73,7 @@ public class CharacterController2D : MonoBehaviour
     private void Start()
     {
         life = dataConserved.DATA.life;
+        gemsCount.text = dataConserved.DATA.Gems.ToString();
         Health.transform.localScale = new Vector3(life / dataConserved.DATA.maxLife, 1, 1);
         Health.transform.localPosition = new Vector3(pixelsToMove * (1 - (life / dataConserved.DATA.maxLife)), 0, 0);
     }
@@ -80,6 +81,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         if (life > 0)
         {
             bool wasGrounded = m_Grounded;
@@ -295,6 +297,7 @@ public class CharacterController2D : MonoBehaviour
         {
             animator.SetBool("Hit", true);
             life -= damage;
+            dataConserved.DATA.life = life;
             Vector2 damageDir = Vector3.Normalize(transform.position - position) * 40f;
             m_Rigidbody2D.velocity = Vector2.zero;
             m_Rigidbody2D.AddForce(damageDir * 10);
@@ -302,6 +305,7 @@ public class CharacterController2D : MonoBehaviour
             Health.transform.localPosition = new Vector3(pixelsToMove * (1 - (life / dataConserved.DATA.maxLife)), 0, 0);
             if (life <= 0)
             {
+                Health.gameObject.SetActive(false);
                 animator.SetTrigger("Dead");
                 StartCoroutine(WaitToDead());
             }
@@ -366,14 +370,9 @@ public class CharacterController2D : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<Attack>().enabled = false;
         transform.Find("DeadSound").GetComponent<AudioSource>().Play();
-        canvas.enabled = false;
+        //canvas.enabled = false;
         yield return new WaitForSeconds(3f);
-        Transform GameOver = transform.Find("game over");
-        if (transform.localScale.x < 0)
-        {
-            GameOver.localScale = new Vector3(-1 * GameOver.localScale.x, GameOver.localScale.y, 1);
-        }
-        GameOver.gameObject.SetActive(true);
+        gameOver.SetActive(true);
         Time.timeScale = 0.01f;
         yield return new WaitForSeconds(0.04f);
         Time.timeScale = 1;

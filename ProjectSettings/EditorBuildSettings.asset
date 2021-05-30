@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dark_Sanctuary/Dark_Sanctuary.unity
     guid: af6b138d9cc7e2f449dceb0fe9590a4e
+  - enabled: 1
+    path: Assets/Scenes/Crossroad/Crossroad.unity
+    guid: d923a8938cfacc3459d825a13aa3e4ff
+  - enabled: 1
+    path: Assets/Scenes/RelenRecruit/RelenRecruit.unity
+    guid: 1ad0caac51259434c8f7a71fa5b1382c
+  - enabled: 1
+    path: Assets/Scenes/BennettRecruit/BennettRecruit.unity
+    guid: 6ff7d7a62174c5b4ab8165d8bddefefd
+  - enabled: 1
+    path: Assets/Scenes/Dark_Sanctuary_2/Dark_Sanctuary_2.unity
+    guid: e2a17399578a20b449e423ab16071c2b
   m_configObjects: {}

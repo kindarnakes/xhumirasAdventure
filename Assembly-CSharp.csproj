@@ -71,7 +71,12 @@
      <Compile Include="Assets\Player\dataConserved.cs" />
      <Compile Include="Assets\Player\endAttack.cs" />
      <Compile Include="Assets\Player\ground.cs" />
+     <Compile Include="Assets\Scenes\BennettRecruit\FinalRecruit.cs" />
+     <Compile Include="Assets\Scenes\BennettRecruit\StartBennett.cs" />
+     <Compile Include="Assets\Scenes\Crossroad\StartCrossroad.cs" />
      <Compile Include="Assets\Scenes\Dark_Sanctuary\DarkSanctuaryStart.cs" />
+     <Compile Include="Assets\Scenes\Dark_Sanctuary_2\Dark_Sanctuary2Start.cs" />
+     <Compile Include="Assets\Scenes\Dark_Sanctuary_2\WizardGenerator.cs" />
      <Compile Include="Assets\Scenes\DialogSystem.cs" />
      <Compile Include="Assets\Scenes\Dialogs.cs" />
      <Compile Include="Assets\Scenes\Forest\DoorOpen.cs" />
@@ -80,6 +85,8 @@
      <Compile Include="Assets\Scenes\Forest_Cave\StartDarkCave.cs" />
      <Compile Include="Assets\Scenes\Main_Menu\Options.cs" />
      <Compile Include="Assets\Scenes\NextArea.cs" />
+     <Compile Include="Assets\Scenes\RelenRecruit\BookAdd.cs" />
+     <Compile Include="Assets\Scenes\RelenRecruit\StartQuest.cs" />
      <Compile Include="Assets\Slime\Vendor.cs" />
      <Compile Include="Assets\wall.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -88,6 +95,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Relen\License.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

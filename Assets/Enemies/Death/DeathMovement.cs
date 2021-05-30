@@ -114,28 +114,39 @@ public class DeathMovement : MonoBehaviour
 
     }
 
+    private bool experienced = false;
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+        var life = 1f;
         dataConserved data = dataConserved.DATA;
         if (other.gameObject.name.CompareTo("Attack") == 0)
         {
-            this.ApplyDamage(data.damageMelee());
+            life = this.ApplyDamage(data.damageMelee());
         }
         else if (other.gameObject.name.CompareTo("PlayerThrowingWeapon") == 0)
         {
-            this.ApplyDamage(data.damageRanged());
+            life = this.ApplyDamage(data.damageRanged());
             Destroy(other.gameObject);
         }
         else if (other.gameObject.name.CompareTo("player") == 0)
         {
             other.GetComponent<CharacterController2D>().ApplyDamage(1f, other.transform.position);
         }
+
+        if (life <= 0 && !experienced)
+        {
+            experienced = true;
+            data.addExperience(90f);
+        }
     }
 
-    public void ApplyDamage(float damage)
+    public float ApplyDamage(float damage)
     {
         damage = Mathf.Abs(damage);
         life -= damage;
+
+        return life;
     }
 
 }

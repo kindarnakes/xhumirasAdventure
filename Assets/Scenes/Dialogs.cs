@@ -94,6 +94,104 @@ public sealed class Dialogs
         dialogToAdd = new List<Dialog>();
 
 
+        
+        //CROSSROAD_START
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira doler cabeza ..."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "No fue buena idea quedarse insconsciente a proposito para entrar en el plano onírico."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira querer dormir."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Me temo que queda algo más por hacer, algo como salvar la puñetera realidad. Tienes ante ti varias opciones."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Puedes usar el portal que nos ha abierto tu última acción y enfrentarnos al devorador."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Puedes ir a hablar con Bennett Reinhardt para que te ayude."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Puedes ir a hablar con Relen Du Raven para que te ayude."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "También te puedes quedar aquí y condenar toda la realidad, y posiblemente todas las conocidas."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira moverse, no dormir..."));
+        dialogs.Add("CROSSROAD_START", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+
+        //RELEN_QUEST_START
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "*Xhumira viaja hasta la casa de Relen, el Archimago y golpea la puerta*\nXhumira buscar Maestro Relen"));
+        dialogToAdd.Add(new Dialog(Characters.Desconocido.ToString(), "El maestro está ocu..."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira querer ver Maestro Relen.\n*De repente la puerta de la casa comienza a crujir*"));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "¡PARA! Ya has hecho eso una vez, dejadla entrar."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira venir a ..."));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "Habla en draconico, pareces estúpida hablando en común."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "*Habla en un idioma distinto*\nQuiero que me ayudes, el gran enemigo de todos acecha, y hay un portal que puede usarse para pelear."));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "Peticiones, peticiones, he encontrado algo yo también, ayudame a conseguirlo y yo te ayudaré a ti."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Tu pides mucho, hay que darse prisa."));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "Lo necesito para ayudarte, sabes bien lo que quiero."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Ese libro es peligroso, la coordenada está a punto de volver a darse."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Pero está bien, llevanos al lugar, lo haré."));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "*El portal se abre y ambos pasan*\nEsta arriba, yo no puedo pasar de aquí. No mueras."));
+        dialogs.Add("RELEN_QUEST_START", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+        //RELEN_RECRUIT_END
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Lo tengo, tengo tu grimorio pestoso."));
+        dialogToAdd.Add(new Dialog(Characters.Desconocido.ToString(), "*Una voz extraña suena en lo profundo*\nNo sabes el mal que has hecho."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira saber. Pero está vez deber ser así."));
+        dialogToAdd.Add(new Dialog(Characters.Desconocido.ToString(), "*No hay respuesta*"));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "*Entrega el grimorio y ambos vuelven por el portal*"));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "Esta bien, hablame de que has preparado para el otro asunto."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "No haber mucho, ser chungo, no saber que esperar."));
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "De nuevo una misión suicida, nada nuevo contigo, mujer."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Es lo que haber."));
+        dialogToAdd.Add(new Dialog("", "*¡Relen se ha unido a la batalla final!*"));
+        dialogs.Add("RELEN_RECRUIT_END", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+
+        
+        //NO_IR
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira ya no tener nada que hacer ahí."));
+        dialogs.Add("NO_IR", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+
+        //BENNETT_RECRUIT_START
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "*La mujer llega hasta la mansión del Vizconde Bennett Reinhardt y llama a la puerta.\nRapidamente los criados la dejan pasar.*"));
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "Es un placer verte de nuevo, Xhumira."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira venir a pedir ayuda."));
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "Sabes que acudiría a la llamada raudo, mas, no puedo, los libres amenazan la seguridad del reino. Debo ocuparme."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "¿Si Xhumira encargar libres Bennett venir?"));
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "Si me ayudas a acabar con la amenaza, nada impedira ayudarte."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira matar libres."));
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "No es necesario matarlos, basta con detenerlos. Deben ser juzgados."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira ya juzgar, ellos molestar.\n*Antes de que Bennett pueda decir nada más, se ha transformado en pájaro y sale volando por la ventana*"));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Sabías desde el principio que tendrías que hacer esto, ¿verdad?"));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Xhumira ya saber donde libres esconderse, si, Xhumira saber todo, Xhumira ser lista."));
+        dialogs.Add("BENNETT_RECRUIT_START", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+
+        //BENNETT_RECRUIT_FINAL
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "*Regresa a la casa de Bennett*"));
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "Se lo que has hecho, no debiste matarlos."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Hecho, hecho está."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "En fin, ya está, te compañaré."));
+        dialogs.Add("BENNETT_RECRUIT_FINAL", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+
+        //DARK_SANCTUARY_2
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Ha llegado la hora."));
+        dialogToAdd.Add(new Dialog(Characters.Dragon.ToString(), "Tu lo has dicho, ha llegado la hora de consumirte y acabar con todo."));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "¿QUE?¿QUE?¿QUE?"));
+        dialogToAdd.Add(new Dialog(Characters.Cosechador.ToString(), "Yo soy el Gran Cosechador.\nMe has tenido al alcance durante todo este tiempo, pero se acabo, preparate a morir."));
+        dialogs.Add("DARK_SANCTUARY_2", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+        //DARK_SANCTUARY_2_RELEN
+        dialogToAdd.Add(new Dialog(Characters.Relen.ToString(), "Yo me encargo de los hechiceros.\n*Relen esta eliminando a cada hechicero que aparece convocado por el enemigo*"));
+        dialogs.Add("DARK_SANCTUARY_2_RELEN", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
+        
+        //DARK_SANCTUARY_2_BENNETT
+        dialogToAdd.Add(new Dialog(Characters.Bennett.ToString(), "Sufre el juicio de Pholtus criatura maldita.\n*Bennett lanza una lluvia Axiomatica y el enemigo pierde la mitad de su vida*"));
+        dialogs.Add("DARK_SANCTUARY_2_BENNETT", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
     }
 
     public static Dialogs Instance

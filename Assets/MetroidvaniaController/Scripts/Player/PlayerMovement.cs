@@ -21,11 +21,21 @@ public class PlayerMovement : MonoBehaviour
     public GameObject shopPanel;
     public GameObject pauseMenu;
 
+    public Text Experiencie;
+
+    public Text LVL;
+    private int target = 30;
+
     //bool dashAxis = false;
 
     // Update is called once per frame
     void Update()
     {
+        if (Application.targetFrameRate != target)
+            Application.targetFrameRate = target;
+
+        Experiencie.text = "Exp " + dataConserved.DATA.experiencie + " %";
+        LVL.text = "LvL " + dataConserved.DATA.lvl;
 
         if (shop && Input.GetKeyDown(KeyCode.F))
         {
@@ -87,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             }
             */
         }
-        
+
         if (shop && Input.GetKeyDown(KeyCode.Escape))
         {
             shopPanel.SetActive(false);

@@ -1247,6 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: Dark_Sanctuary
+  dialog: {fileID: 0}
 --- !u!1 &86997705
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,7 +11290,7 @@ PrefabInstance:
     - target: {fileID: 3907163747681415383, guid: 0d3e1e71235daff4b81e659c6e2b593c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4123717080322186741, guid: 0d3e1e71235daff4b81e659c6e2b593c,
         type: 3}
@@ -11334,7 +11335,7 @@ PrefabInstance:
     - target: {fileID: 5318468103691598618, guid: 0d3e1e71235daff4b81e659c6e2b593c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5608125367127164654, guid: 0d3e1e71235daff4b81e659c6e2b593c,
         type: 3}

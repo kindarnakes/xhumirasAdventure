@@ -21,30 +21,33 @@ public class dataConserved
             this.Gems = data.Gems;
             this.Scene = data.Scene;
             this.conversationPased = data.conversationPased;
-
+            this.RelenRecruit = data.RelenRecruit;
+            this.BennettRecruit = data.BennettRecruit;
         }
 
         public toXML() { }
         public List<string> conversationPased = new List<string>();
 
-        public float life = 10f;
+        public float life = 100f;
         public int lvl = 0;
-        public int experiencie = 0;
-        public float maxLife = 10f;
+        public float experiencie = 0;
+        public float maxLife = 100f;
         public int lifePotions = 0;
         public int RedCauldron = 0;
         public int FireBottle = 0;
         public int Gems = 0;
         public string Scene = "Main_Menu";
+        public bool RelenRecruit = false;
+        public bool BennettRecruit = false;
     }
 
     public static dataConserved DATA = new dataConserved();
 
     public List<string> conversationPased = new List<string>();
 
-    public float life = 5f;
-    public int lvl = 0;
-    public int experiencie = 0;
+    public float life = 10f;
+    public int lvl = 1;
+    public float experiencie = 0;
     public float maxLife = 10f;
     public bool isFireDamage = false;
 
@@ -53,25 +56,67 @@ public class dataConserved
     public int FireBottle = 1;
     public int Gems = 0;
 
+    public bool RelenRecruit = false;
+    public bool BennettRecruit = false;
+
     public string Scene = "Main_Menu";
     private dataConserved()
     {
 
     }
 
-    public void lvlup()
+    private void lvlup()
     {
-        maxLife = maxLife + (lvl * 1.5f);
-        experiencie = 0;
+        maxLife = 10f + ((lvl - 1) * 3f);
         lvl += 1;
     }
 
-    public float damageMelee(){
-        return (5f + lvl*0.5f);
+    public void addExperience(float exp)
+    {
+        if (lvl < 10)
+        {
+            var gain = exp - (exp * ((lvl - 1) / 10f));
+
+            experiencie += gain;
+
+            if (experiencie >= 100f)
+            {
+                experiencie -= 100f;
+                lvlup();
+            }
+        }
+
+
     }
 
-        public float damageRanged(){
-        return (4f + lvl*0.4f + (isFireDamage?2f:0f));
+    public void startGame()
+    {
+        conversationPased = new List<string>();
+        life = 10f;
+        lvl = 1;
+        experiencie = 0;
+        maxLife = 10f;
+        isFireDamage = false;
+
+        lifePotions = 0;
+        RedCauldron = 0;
+        FireBottle = 1;
+        Gems = 0;
+
+        Scene = "Main_Menu";
+
+    }
+
+
+
+    public float damageMelee()
+    {
+        return (5f + (lvl - 1) * 1f);
+    }
+
+    public float damageRanged()
+    {
+        return (4f + (lvl - 1) * 0.8f + (isFireDamage ? 4f : 0f));
     }
 
     string fileName = Application.persistentDataPath + "/XML/SaveGame.xml";

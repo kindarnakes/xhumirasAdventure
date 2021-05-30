@@ -8,6 +8,7 @@ public class NextArea : MonoBehaviour
 {
 
     public String area;
+    public DialogSystem dialog;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,18 @@ public class NextArea : MonoBehaviour
     {
         if (collision.gameObject.tag.CompareTo("Player") == 0)
         {
-            dataConserved.DATA.life = collision.GetComponent<CharacterController2D>().life;
-            SceneManager.LoadScene(area);
+            if ((dataConserved.DATA.RelenRecruit && area == "RelenRecruit") || (dataConserved.DATA.BennettRecruit && area == "BennettRecruit"))
+            {
+                StartCoroutine(dialog.starDialog(() =>
+                {
+                    dataConserved.DATA.conversationPased.Remove("NO_IR");
+                }));
+            }
+            else
+            {
+                dataConserved.DATA.life = collision.GetComponent<CharacterController2D>().life;
+                SceneManager.LoadScene(area);
+            }
         }
 
     }

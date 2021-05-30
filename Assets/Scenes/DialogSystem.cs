@@ -33,6 +33,7 @@ public class DialogSystem : MonoBehaviour
     {
         if (!dataConserved.DATA.conversationPased.Contains(this.dialogName))
         {
+            dataConserved.DATA.conversationPased.Add(this.dialogName);
             float time = 0.00001f;
             List<Dialogs.Dialog> dialog = Dialogs.Instance.dialogs[this.dialogName];
             GameObject text = textArea.gameObject.transform.parent.gameObject;
@@ -53,12 +54,11 @@ public class DialogSystem : MonoBehaviour
 
                 yield return new WaitForSeconds(time * 1.5f);
             }
-            text.SetActive(false);
-            name.SetActive(false);
-            dataConserved.DATA.conversationPased.Add(this.dialogName);
             dataConserved.DATA.conversationPased.ForEach(c => {
                 Debug.Log(c);
             });
+            text.SetActive(false);
+            name.SetActive(false);
             Time.timeScale = 1f;
             finish();
         }
