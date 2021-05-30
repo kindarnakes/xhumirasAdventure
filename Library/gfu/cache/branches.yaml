@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-05-30T03:09:03.243+02:00
+  lastUpdatedAtString: 2021-05-30T03:15:16.859+02:00
   initializedAtString: 2021-05-30T03:00:50.986+02:00
   localBranches: []
-  remoteBranches: []
+  remoteBranches:
+  - name: origin/master
+    tracking: '[None]'
   remotes:
   - name: origin
     url: https://github.com/kindarnakes/xhumirasAdventure
@@ -32,9 +34,15 @@ MonoBehaviour:
     keys:
     - origin
     subKeys:
-    - Values: []
+    - Values:
+      - master
     subKeyValues:
-    - Values: []
+    - Values:
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/kindarnakes/xhumirasAdventure
+        trackingBranch: 
   configRemotes:
     keys:
     - origin
