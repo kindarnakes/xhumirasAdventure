@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 116
+  controlID: 57
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 117
+  controlID: 58
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 118
+  controlID: 59
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -621,20 +621,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MetroidvaniaController/Scripts/Player
+    - Assets/Scenes/Dark_Sanctuary_2
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MetroidvaniaController/Scripts/Player
+  - Assets/Scenes/Dark_Sanctuary_2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\Xhumira's Adventure
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 76}
-    m_SelectedIDs: f2420000
-    m_LastClickedID: 17138
-    m_ExpandedIDs: 00000000223f0000243f0000263f0000283f00002a3f00003a3f000000ca9a3b
+    m_SelectedIDs: da3d0000
+    m_LastClickedID: 15834
+    m_ExpandedIDs: 000000009c3d00009e3d0000a03d0000a23d0000a43d0000be3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,7 +662,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000223f0000243f0000263f0000283f00002a3f00002c3f0000
+    m_ExpandedIDs: 000000009c3d00009e3d0000a03d0000a23d0000a43d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -787,7 +787,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2afffaff3efffaffb401fbff1206fbff0e08fbffee0bfbff9e0dfbff9410fbff4813fbff4c13fbfff229fbff622afbffee2efbff603bfbff244cfbff2e52fbff1854fbff2a56fbff2c5afbff0882fbff868dfbff948dfbff20c6fbff26c6fbff12d9fbff86dcfbff12e9fbffd4ecfbffd6ecfbffdcecfbff2eedfbffa8effbffe0f1fbfff6f1fbff0219fcff0419fcff0a19fcff861cfcff181ffcff0c2cfcff4636fcff6a38fcff665ffcff62e6fcff64e6fcff6ae6fcffd6e6fcff66e7fcff4235fdffc43dfdffb848fdffba48fdffc048fdffc649fdff5473fdff8e73fdffc276fdff2e84fdff8087fdff1288fdfff096fdff42b0fdff88b9fdff42ccfdffc8cffdffeed0fdff42d1fdff56d1fdffc0d3fdffb6d6fdffbed6fdffc6d6fdffb2d7fdffc6d7fdff70d9fdff5edcfdff66dcfdff6adcfdffb8dcfdffccdcfdff36dffdff2ce2fdff34e2fdff3ce2fdff2ee3fdff42e3fdffece4fdffdae7fdffe2e7fdffe6e7fdff38e8fdff4ce8fdfff6e9fdffe4ecfdffececfdfff0ecfdff42effdff56effdffc0f1fdffb6f4fdffbef4fdffc6f4fdffb6f5fdffcaf5fdff74f7fdff62fafdff6afafdff6efafdff36fbfdff4afbfdfff4fcfdffe2fffdffeafffdffeefffdff9c02feffb002feff1a05feff1008feff1808feff2008feffc00bfeff1a0cfeff2e0cfeffd80dfeffc610feff4413feff4813feff9413feffa813feff1216feff0819feffbc1bfeffc01bfeff6c1cfeff801cfeffea1efeffe021feff9424feff9824feff4425feff5825feff0227fefff029feff6e2cfeff722cfeffbe2cfeffd22cfeff3c2ffeff3232feffe634feffea34feff5a36feff6e36feffd838feffce3bfeff823efeff863efeff483ffeff5c3ffeff0641fefff443feff7246feff7646feff0247feff1647feffc048feffae4bfeff2c4efeff304efeffe450fefff850feffa252feff9055feff0e58feff1258feff8658feff9a58feff045bfefffa5dfeffae60feffb260feff5c61feff7061feff1a63feff0866feff8668feff8a68feffd468feffe868feff526bfeff486efefffc70feff0071feff1672feff2a72feffd473feffc276feff4079feff4479feff0e7afeff227afeff8c7cfeff827ffeff3682feff3a82feffa684feffe884fefffc84feffa686feff9489feff128cfeff168cfeffd88cfeffec8cfeff568ffeff4c92feff0095feff0495feff4ca3feffbaa3feffc2a3feff94a7feffb4b1feffccb2feffe8b2feffc0cafeffd4cafeff40cdfeff36d0feff3ed0feff44d0fefffe4cffffca76ffffde76ffff4079ffff2c7cffff347cffff3a7cffff4e90ffffa6faffffc6faffff22fbffff32fbffff5afbffff8ed5000078d70000348501002e87010080a8010028c1010044c1010056c10100f8d2010026d3010042d3010054d3010066d30100e8e3010080270200ae2702003a38020068380200f448020022490200146b0200306b0200426b02009edf020066e102002ae2020064fc0200803b0300ac3b0300483d03000ae90300e4ff030076df0500be4a06007ad60600ae820700dc820700
+      m_ExpandedIDs: d6d1ffffead1fffff0d1ffff4ad6ffff42d8ffff20dcffffccddffffbae0ffff38e3ffff3ce3ffffbce3ffffd0e3ffff92e4fffff0e8ffffeceaffffcceeffff7af0ffff70f3ffff0cf6ffff14f6ffffaefaffff4cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -919,7 +919,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.41622794, y: -0.00900545, z: 0.0041198283, w: -0.9092188}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

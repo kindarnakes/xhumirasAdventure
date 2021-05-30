@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d61983d2a058f84ab9902b1d84e0cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogName: NO_IR
+  dialogName: DARK_SANCTUARY_2_END
   textArea: {fileID: 924684705}
   textName: {fileID: 1610044627}
 --- !u!114 &1018469565 stripped

@@ -192,6 +192,13 @@ public sealed class Dialogs
         dialogs.Add("DARK_SANCTUARY_2_BENNETT", dialogToAdd);
         dialogToAdd = new List<Dialog>();
 
+        //DARK_SANCTUARY_2_END
+        dialogToAdd.Add(new Dialog(Characters.Cosechador.ToString(), "¡NO! Derrotado por una mortal ... ¡NO!"));
+        dialogToAdd.Add(new Dialog(Characters.Xhumira.ToString(), "Ahora Xhumira dormir, dormir en tierra con Theia ..."));
+        dialogToAdd.Add(new Dialog("", "*Tras los acontecimientos, todo volvio a la normalidad, pero ¿por cuanto tiempo?\nCuando la druida despierte de su sueño, el mundo estará de nuevo en peligo*"));
+        dialogs.Add("DARK_SANCTUARY_2_END", dialogToAdd);
+        dialogToAdd = new List<Dialog>();
+
     }
 
     public static Dialogs Instance
